@@ -1,13 +1,32 @@
 * {margin: 0; padding: 0;
 }
+
+:root{
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  --background-body: #F3F5F7;
+  --background-box: #ffffff;
+}
+
+
 body {
     font-family: calibri;
-    background: #F3F5F7;
+    background: var(--background-body);
+}
+
+h1 {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
 }
 
 .login-box {
-    background: #ffffff;
-    width: 20%;
+    background: var(--background-box);
+    width: 40%;
     padding: 35px;
     margin: 100px auto;
     box-shadow: 0 1px 2px rgba(30,37,44,.08);
@@ -16,9 +35,9 @@ body {
 
 form label {
     display: block;
-    margin: 10px 0;
+    margin: 9px 0;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     box-sizing: border-box;
     color: #49525d;
 }
@@ -32,16 +51,11 @@ form input {
     line-height: 48px;
     height: 50px;
     border: 2px solid #e2e8ed;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
 form button {
-    --primary-color: #645bff;
-    --secondary-color: #fff;
-    --hover-color: #111;
-    --arrow-width: 10px;
-    --arrow-stroke: 2px;
     box-sizing: border-box;
     border: 0;
     border-radius: 20px;
@@ -99,26 +113,17 @@ form button {
     right: 0;
 }
 
-h1 {
-    margin-top: 0px;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 100;
-}
 
 ::-webkit-input-placeholder {
 color: #bebcbc;
-font-size: italic;
-}
-
-input:-moz-placeholder,
-textarea:-moz-placeholder{
-color: #bebcbc;
-font-size: italic;
+font-style: italic;
 }
 
 @media only screen and (max-width: 700px) {
   .login-box {
-        width: 60%;
+    margin-top: 40px;
+    margin: 30px;
+    width: auto;
+    height: auto;
   }
 }
